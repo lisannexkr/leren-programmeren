@@ -1,12 +1,24 @@
-personen = 4
-toegangsticket = 7.45
-vipvr = 0.37
-minuten = 45
-minuten2 = 5
-ticketsheledag = 29.8
-ticketsvipvr = 14.60
+personen = input("Met hoeveel mensen ben je?")
+personen = int(personen)
+toegangsticket = input("Hoeveel kost een toegangsticket?")
+toegangsticket = float(toegangsticket)
+vipvr = input("Hoeveel kost vip vr per persoon?")
+vipvr = float(vipvr)
+minuten2 = input("Per hoeveel volle minuten betaal je?")
+minuten2 = int(minuten2)
+minuten = input("Hoeveel volle minuten wil je vipvr spelen?")
+minuten = int(minuten)
+ticketsheledag = input("Hoeveel kost een toegangsticket voor de hele dag?")
+ticketsheledag = float(ticketsheledag)
+ticketsvipvr = input("Hoeveel kost een vip vr ticket?")
+ticketsvipvr = float(ticketsvipvr)
+# ttl = tickettotaal+ticketsvipvrtotaal
+tickettotaal = (personen*(ticketsheledag-toegangsticket))
+ticketsvipvrtotaal = vipvr/(minuten/minuten2)*ticketsvipvr
 
-print("Dit geweldige dagje-uit met 4 mensen in de Speelhal met 45 minuten VR kost je maar 44.44 euro")
-print("Voor tickets voor de hele dag betaal je {} met 4 mensen".format(personen*toegangsticket))
-print("En als je de VIP-VR Game-seat wilt doen dan is het {} ".format(minuten/minuten2*vipvr*personen))
-print("Dus dan ben je {} kwijt voor de hele dag".format(ticketsheledag+ticketsvipvr))
+print(" ---------------------------------------------------------------------------------------------------------")
+print("| Dit is een geweldig dagje-uit met {} mensen in de Speelhal met {} minuten VR, en het kost je maar {} euro".format(personen, minuten, ticketsheledag+ticketsvipvr))
+print("| Voor tickets voor de hele dag betaal je {} met 4 mensen".format(personen*toegangsticket))
+print("| En als je de VIP-VR Game-seat wilt doen dan is het {} ".format(minuten/minuten2*vipvr*personen))
+print("| Dus dan ben je {} kwijt voor de hele dag".format(ticketsheledag+ticketsvipvr*personen))
+print(" ---------------------------------------------------------------------------------------------------------")
