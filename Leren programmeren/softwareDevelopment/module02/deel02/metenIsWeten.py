@@ -1,6 +1,9 @@
-a = max
-a = input("Wat is getal A?")
-b = input("Wat is getal B?")
-if a > b:
-    print("A is het grootste getal, {}".format(a))
-    
+a = input("Wat is A?") 
+b = input("Wat is B?")
+if b > a:
+  print("A is het kleinste getal, {}".format(a))
+  min = a
+elif a == b:
+  print("")
+elif a > b:
+    print("")
