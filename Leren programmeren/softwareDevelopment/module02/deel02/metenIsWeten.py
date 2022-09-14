@@ -7,3 +7,9 @@ elif a < b:
   print("")
 else:
   print("A is even groot als B")
+
+min = a
+max = b
+
+print("Het minimum is {}".format())
+print("Het maximum is {}".format())
