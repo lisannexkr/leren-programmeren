@@ -5,7 +5,6 @@ print("Je mag alleen maar antwoorden met Ja of Nee.")
 print("veel plezier!")
 
 # Scheiding instructies en spel
-
 print ("- - - - - - - - - - - - - - - - ")
 
 # Begin van het kaas spel.
