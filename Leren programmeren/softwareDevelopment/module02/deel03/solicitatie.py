@@ -52,6 +52,7 @@ print("┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬�
 print("┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴")
 
 # Het resultaat
+failed = True
 if skills == 'J':
     if MBO == 'J':
         if vrachtwagenbewijs == 'J':
@@ -62,7 +63,8 @@ if skills == 'J':
                            if certificaat == 'J':
                                 print("Gefeliciteerd, Je bent geschikt voor de baan!")
                                 print("Stuur je cv in waar je het moet sturen en we zullen snel een reactie sturen.")
-else:
+                                failed = False
+if failed == True:
     print("Helaas! Je hebt niet voldaan aan alle criteria")
     print("Je kan dus je cv niet insturen.")
     print("Als er ooit een andere vacature vrijkomt kan je het altijd opnieuw proberen!")
