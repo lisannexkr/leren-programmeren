@@ -6,16 +6,16 @@ robotArm = RobotArm('exercise 5')
 # Jouw python instructies zet je vanaf hier:
 for i in range(0,7):
     robotArm.moveRight()
-for i in range(0,1):
+
+robotArm.grab()
+robotArm.moveRight()
+robotArm.drop()
+for i in range(0,7):
+    for i in range(0,2):
+        robotArm.moveLeft()
     robotArm.grab()
     robotArm.moveRight()
     robotArm.drop()
-    for i in range(0,7):
-        for i in range(0,2):
-            robotArm.moveLeft()
-        robotArm.grab()
-        robotArm.moveRight()
-        robotArm.drop()
 
 
 # Na jouw code wachten tot het sluiten van de window:
