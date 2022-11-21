@@ -5,3 +5,6 @@ while totaal < 1000:
     totaal += nummer
     nummer += 1
     print(totaal)
+
+
+str = "50+51"
