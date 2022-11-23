@@ -1,13 +1,9 @@
-AM = True
-while AM == True:
-    for i in range(0,13):
-        print("{} AM".format(i))
-    if i == 12:
-        AM = False
+AM = 1
+while AM <= 12:
+    print(f"{AM} AM")
+    AM = AM + 1
 
-PM = True
-while PM == True:
-    for j in range(0,13):
-        print("{} PM".format(j))
-    if j == 12:
-        PM = False
+PM = 1
+while PM <= 12:
+    print(f"{PM} PM")
+    PM = PM + 1
