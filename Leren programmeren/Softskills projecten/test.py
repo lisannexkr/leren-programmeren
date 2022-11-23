@@ -1,4 +1,6 @@
-from random import random
-import random
-
-print (random.randint(1,10))
+x = 1
+while True:
+    print(x)
+    x += 1
+    if x > 10:
+        False
