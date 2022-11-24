@@ -1,6 +1,4 @@
 x = 1
-while True:
+while x <= 10:
     print(x)
     x += 1
-    if x > 10:
-        False
