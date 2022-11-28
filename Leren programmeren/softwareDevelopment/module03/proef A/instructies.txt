@@ -1,0 +1,15 @@
+Het programma stopt na 20 ronden of als je het aangeeft dat je eerder wilt stoppen.
+
+Elke ronde (20 ronden):
+Neem een random geheim tussen 1 en 1000.
+10 x raden per ronde.
+Als het getal geraden is krijg je een punt, en stopt het getal.
+Als het getal niet geraden is stopt het programma na 10 gokken en krijg je geen punt.
+Vraag of ze nog een getal willen raden (niet bij ronde 20)
+
+Elke gok (10 gokken):
+Geraden, hoger of lager.
+Als het absolute verschil <50 is print "je bent warm".
+Als het absolute verschil <20 is print "je bent heel warm".
+
+Meld eindscore.
