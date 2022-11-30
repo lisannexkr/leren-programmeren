@@ -1,4 +1,4 @@
-dagen = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"]
+dagen = ("maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag")
 
 werkDagen = dagen[0:5]
 weekendDagen = dagen[5:7]
