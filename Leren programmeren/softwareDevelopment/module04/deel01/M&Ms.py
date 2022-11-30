@@ -1,15 +1,12 @@
-MenMkleuren = ["oranje", "groen", "blauw", "bruin"]
+import random	
+
+MenMkleuren = ("oranje", "groen", "blauw", "bruin")
+zakMenMs = []
 hoeveelMenMs = int(input("Hoeveel M&M's moeten er toegevoegd worden? "))
 
-# for x in range (1):
-#     MenMkleuren.append()
-#     MenMkleuren.randomchoice
-i = 0
 for i in range (hoeveelMenMs):
-    i = i + 1
-    MenMkleuren.append(f"append + {i}")
+     keuze = random.choice(MenMkleuren)
+     zakMenMs.append(keuze)
 
-
-
-print(MenMkleuren)
+print(zakMenMs)
 
